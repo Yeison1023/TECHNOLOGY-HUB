@@ -17,7 +17,6 @@ header {
     border-bottom: 2px solid #ccc;
 }
 
-
 div {
     height: 100px;
     display: flex;
@@ -52,50 +51,56 @@ div {
     object-fit: cover;
 }
 
-.nav-link{
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px 20px; 
-    border-radius: 10px;
-    background-color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+nav {
+    height: 95px;
+    background-color: rgb(142, 101, 165);
+    position: sticky;
+    top: 110px;
+    z-index: 1;
+    padding-top: 15px;
 }
 
-.nav-link :hover{
-    background-color: #e2d4f1;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+nav ul li a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
 }
 
-.nav-link.activo{
-    background-color: #5c3d80;
-    color: white;
-}
+/* LISTA DESPLEGABLE */
 
-nav button {
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-nav{ 
-    background-color: #A07EB7;
-    padding: 20px 40px;
+nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 8px rgb(0,0,0,0.1);   
-    border-radius: 0 0 12px 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    gap: 8%;
 }
 
-nav a {
-    color: black;
+nav ul a {
+    display: block;
+    color: #000000;
     text-decoration: none;
-    display: flex;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
+nav ul li:hover {
+    background: #7d4096;
+    border-radius: 15px;
+    
+}
+
+.vl {
+    border-left: 2px solid rgb(0, 0, 0);
+    height: 40px;
+} /* Linea vertical*/
+
 
 .boton-derecha {
     display: flex;
@@ -117,17 +122,7 @@ nav a {
     background-color: #8e6dad;
 }
 
-.seleccionar button{
-    background-color:#A07EB7;
-}
 
-.seleccionar button :hover{
-    background-color: #c9a2e6;
-}
-
-.seleccionar button :active{
-    background-color: #70327d;
-}
 
 .main-content{
     display: flex;
