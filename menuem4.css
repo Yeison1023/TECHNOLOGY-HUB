@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    margin: 0;
+    background-color: white;
+}
+header {
+    background-color: white;
+    height: 140px;
+    background-position: center ;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 10%;
+    border: 2px solid #a07eb7;
+    box-shadow: 0px 0px 10px rgb(160, 126, 183, 0.4);
+    
+}
+.iconoUsuario button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.iconoUsuario button :hover{
+    transform: scale(1.1);
+}
+
+.iconoUsuario img{
+    height: 80px; 
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #A07EB7;
+    box-shadow: 0px 0px 10px rgb(160, 126, 183, 0.4);
+    object-fit: cover;
+}
+
+.nav-link{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px; 
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.nav-link.activo{
+    background-color: #5c3d80;
+    color: white;
+}
+
+.nav-link:hover{
+    background-color: #e2d4f1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+nav button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+nav{ 
+    background-color: #A07EB7;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 8px rgb(0,0,0,0.1);   
+    border-radius: 0 0 12px 12px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 25px;
+}
+
+.seleccionar button{
+    background-color:#A07EB7;
+}
+
+.seleccionar button :hover{
+    background-color: #c9a2e6;
+}
+
+.seleccionar button :active{
+    background-color: #70327d;
+}
+
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.card{
+  background-color: #dedde1;
+  border-radius: 30px;
+  box-shadow: 0 0 15px rgba(100, 0, 150, 0.3);
+  padding: 30px;
+  width: 480px;
+  position: relative;
+}
+
+.venta-titulo{
+  background-color: #b79acb;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.venta-contenido{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.imagenes img{
+  width: 100px;
+  height: 80px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.info p{
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+
+
+.back-arrow{
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 30px;
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+.user-card{
+  text-align: center;
+}
+
+.user-card img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  background-color: white;
+  padding: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.user-card p{
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.user-card h2{
+  margin-bottom: 15px;
+}

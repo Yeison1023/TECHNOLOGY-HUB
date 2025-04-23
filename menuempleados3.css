@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    margin: 0;
+    background-color: white;
+}
+header {
+    background-color: white;
+    height: 140px;
+    background-position: center ;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+
+div {
+    height: 100px;
+    display: flex;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    border-radius: 10%;
+    border: 2px solid #a07eb7;
+    box-shadow: 0px 0px 10px rgb(160, 126, 183, 0.4);
+    
+}
+.iconoUsuario button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.iconoUsuario button :hover{
+    transform: scale(1.1);
+}
+
+.iconoUsuario img{
+    height: 80px; 
+    width: 80px;
+    border-radius: 50%;
+    border: 2px solid #A07EB7;
+    box-shadow: 0px 0px 10px rgb(160, 126, 183, 0.4);
+    object-fit: cover;
+}
+
+.nav-link{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px; 
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+.nav-link :hover{
+    background-color: #e2d4f1;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.nav-link.activo{
+    background-color: #5c3d80;
+    color: white;
+}
+
+nav button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+nav{ 
+    background-color: #A07EB7;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 2px 8px rgb(0,0,0,0.1);   
+    border-radius: 0 0 12px 12px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    font-size: 25px;
+}
+
+.seleccionar button{
+    background-color:#A07EB7;
+}
+
+.seleccionar button :hover{
+    background-color: #c9a2e6;
+}
+
+.seleccionar button :active{
+    background-color: #70327d;
+}
+
+.busqueda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px;
+    gap: 10px;
+}
+
+.busqueda input {
+    padding: 10px 15px;
+    width: 600px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+}
+
+.busqueda button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.busqueda img {
+    height: 30px;
+    width: 30px;
+}
+
+
+.contenido-principal {
+    background-color: #e0e0e0;
+    border: 5px solid #9e8ca4;
+    border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    box-shadow: 0 0 20px #9b8ab0;
+    justify-content: space-between;
+    box-shadow: 0 0 20px #9b8ab0;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.producto {
+    flex: 1;
+    position: relative;
+}
+
+.imagen-pc {
+    width: 300px;
+}
+
+.etiqueta {
+    background-color: #b69bcf;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 0 20px 0 0;
+    box-shadow: 3px 3px 5px #777;
+    color: #1f003b;
+    font-weight: bold;
+    font-size: 24px;}
+
+.editar-icono {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+}
+
+.producto .editar-icono {
+    top: 0;
+    right: 5px;
+    transform: translatex(37px);
+}
+
+.descripcion {
+    flex: 2;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.input-descripcion{
+    font-size: 18px;
+    padding: 10px;
+    width: 80%;
+    border: 2px solid #999;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #bbb;
+}
+
+.texto .editar-icono {
+    position: relative;
+    right: -35px;
+    top: 0;
+}
+
+.unidades {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    position: relative;
+}
+
+.unidades input {
+    width: 60px;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-left: 40px;
+}
+
+.btn {
+    padding: 15px 30px;
+    background-color: #b69bcf;
+    border: 2px solid #2e003d;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #1f003b;
+    box-shadow: 3px 3px 5px #333;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d3bce8;
+}  
