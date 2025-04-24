@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body class="formularios">
+   <div class="logincontainer">
+    <h1>LOGIN</h1>
+    <hr>
+    <input type="email" placeholder="Ingrese su email"><br>
+    <div class="password-container">
+        <input type="password" id="password" class="input-text" placeholder="Ingrese su contraseña">
+        <img src="imagenes/descarga.jpeg" alt="Mostrar/Ocultar" class="icono-ojo" onclick="mostrarContrasena()">
+    </div>
+    <button class="btnlogin ingresar">INGRESAR</button> <br>
+    <button class="btnlogin registrar">REGISTRAR</button>
+    <div class="iconslogin">
+        <button><img src="imagenes/iconoGoogle.png"></button>
+        <button><img src="imagenes/facebook.png"></button>
+        <button><img src="imagenes/x.png"></button>
+    </div>
+   </div> 
+   <script>
+    function mostrarContrasena() {
+        const input = document.getElementById("password");
+        if (input.type === "password") {
+            input.type = "text";
+        } else {
+            input.type = "password";
+        }
+    }
+    </script>
+</body>
+</html>

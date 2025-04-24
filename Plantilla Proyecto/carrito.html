@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrito.css">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+  <img src="Imagenes/Logo.png" class="logo" />
+      <div class="lupa">
+        <button><img src="Imagenes/iconoLupa.png" alt="" /></button>
+      </div>
+      <input
+        type="text"
+        class="cajaTexto"
+        placeholder="¿Que producto te gustaria buscar?"
+      />
+      <button><img src="Imagenes/iconoCarrito.png" alt="" /></button>
+      <button><img src="Imagenes/iconoUsuario.png" alt="" /></button>
+  </header>
+
+  <!--  MENU DESPLEGABLE NAVEGADOR -->
+
+  <nav>
+    <ul>
+      <li><a href="">Inicio</a></li>
+      <p class="vl"></p>
+      <li>
+        <a href="#Electrodomesticos">Electrodomesticos</a>
+        <ul>
+          <li><a href="#Neveras">Neveras</a></li>
+          <li><a href="#Aspiradoras">Aspiradoras</a></li>
+          <li><a href="#Aire-acondicionado">Aire acondicionado</a></li>
+          <li><a href="#Televisores">Televisores</a></li>
+          <li><a href="#Teatro-en-casa">Teatro en casa</a></li>
+          <li><a href="#Microondas">Microondas</a></li>
+          <li><a href="#Lavadora">Lavadora</a></li>
+          <li><a href="#Consola-de-videojuegos">Consola de Videojuegos</a></li>
+        </ul>
+      </li>
+      <p class="vl"></p>
+      <li>
+        <a href="#Perifericos">Perifericos</a>
+        <ul>
+          <li><a href="#Mouse">Mouse</a></li>
+          <li><a href="#Teclado">Teclado</a></li>
+          <li><a href="#Monitor">Monitor</a></li>
+          <li><a href="#Audifonos">Audifonos</a></li>
+          <li><a href="#Tableta_Grafica">Tableta Grafica</a></li>
+        </ul>
+      </li>
+      <p class="vl"></p>
+      <li>
+        <a href="#Computadores">Computadores</a>
+        <ul>
+          <li><a href="#Pc_de_torre">Pc de torre</a></li>
+          <li><a href="#Pc_todo_en_uno">Pc todo en uno</a></li>
+          <li><a href="#Portatiles">Pc portatil</a></li>
+          <li>
+            <a href="#Componentes">Componentes</a>
+            <ul>
+              <li><a href="#Procesadores">Procesadores</a></li>
+              <li><a href="#Memoria_ram">Memoria ram</a></li>
+              <li><a href="#Tarjeta_grafica">Tarjetas graficas</a></li>
+              <li><a href="#Almacenamiento">Almacenamiento</a></li>
+              <li><a href="#Fuente_de_poder">Fuente de poder</a></li>
+              <li><a href="#Motherboard">Motherboard</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <p class="vl"></p>
+      <li>
+        <a href="#Smartphones">Smartphones</a>
+        <ul>
+          <li><a href="#Celulares">Celulares</a></li>
+          <li><a href="#Tablets">Tablets</a></li>
+        </ul>
+      </li>
+      <p class="vl"></p>
+      <li><a href="">Servicios</a></li>
+    </ul>
+  </nav>
+      <div class="carrito">
+        <div class="productos">
+          <!-- Producto 1 -->
+          <div class="producto">
+            <span class="eliminar">✖</span>
+            <img src="https://via.placeholder.com/60x30" alt="RAM">
+            <div class="producto-info">
+              <span class="producto-nombre">Memoria RAM</span>
+              <span>$15</span>
+            </div>
+            <div class="cantidad-control">
+              <button onclick="cambiarCantidad('cantidad1', -1)">◄</button>
+              <input id="cantidad1" type="text" value="1" readonly>
+              <button onclick="cambiarCantidad('cantidad1', 1)">►</button>
+            </div>
+          </div>
+    
+          <!-- Producto 2 -->
+          <div class="producto">
+            <span class="eliminar">✖</span>
+            <img src="https://via.placeholder.com/60x60" alt="CPU">
+            <div class="producto-info">
+              <span class="producto-nombre">Procesador Intel</span>
+              <span>$25</span>
+            </div>
+            <div class="cantidad-control">
+              <button onclick="cambiarCantidad('cantidad2', -1)">◄</button>
+              <input id="cantidad2" type="text" value="2" readonly>
+              <button onclick="cambiarCantidad('cantidad2', 1)">►</button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="resumen">
+          <p>Precio 1: $15</p>
+          <p>Precio 2: $25</p>
+          <p>Subtotal: <span id="subtotal">$$$</span></p>
+          <p>Envío: $<span id="envio">5</span></p>
+          <p>Impuestos: $<span id="impuestos">0</span></p>
+          <p><strong>Total: <span id="total">$$$</span></strong></p>
+          <button class="boton-continuar">Continuar</button>
+        </div>
+      </div>
+    
+      <script src="carrito.js"></script>
+</body>
+</html>
