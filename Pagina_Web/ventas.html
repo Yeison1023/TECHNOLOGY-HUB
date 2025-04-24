@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ventas.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ENCABEZADO DE LA PAGINA -->
+
+    <header>
+      <img src="Imagenes/Logo.png" class="logo" />
+      <div class="lupa">
+        <button><img src="Imagenes/iconoLupa.png" alt="" /></button>
+      </div>
+      <input
+        type="text"
+        class="cajaTexto"
+        placeholder="¿Que producto te gustaria buscar?"
+      />
+      <button><img src="Imagenes/iconoCarrito.png" alt="" /></button>
+      <button><img src="Imagenes/iconoUsuario.png" alt="" /></button>
+    </header>
+
+    <!--  MENU DESPLEGABLE NAVEGADOR -->
+
+    <nav>
+      <ul>
+        <li>
+          <a href="#Electrodomesticos">GESTION DE COMENTARIOS</a>
+        </li>
+        <p class="vl"></p>
+        <li>
+          <a href="#Perifericos">GESTION DE INVENTARIO</a>
+        </li>
+        <p class="vl"></p>
+        <li>
+          <a href="#Computadores">GESTION DE VENTAS</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="Contenedor">
+        <div class="superior">
+          <p class="texto-superior">GESTION DE VENTAS</p>
+          <div class="izquierda">
+            <img
+              src="Imagenes/iconoLupa.png"
+              alt="Logo"
+              class="logo-contenedor"
+            />
+            <input type="text" placeholder="Buscar..." class="buscador" />
+          </div>
+        </div>
+        <table class="tabla-excel">
+          <colgroup>
+            <col style="width: 10%" />
+            <col style="width: 50%" />
+            <col style="width: 30%" />
+            <col style="width: 5%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Producto</th>
+              <th>Precio</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mouse</td>
+              <td>$15.00</td>
+              <td>2</td>
+              <td>$30.00</td>
+            </tr>
+            <tr>
+              <td>Teclado</td>
+              <td>$25.00</td>
+              <td>1</td>
+              <td>$25.00</td>
+            </tr>
+            <tr>
+              <td>Monitor</td>
+              <td>$150.00</td>
+              <td>1</td>
+              <td>$150.00</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
